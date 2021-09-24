@@ -1,0 +1,88 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    padding: 10px;
+}
+
+header{
+    border-bottom: 3px solid black;
+}
+
+h1{
+    font-family: "Snell Roundhand";
+    font-weight: normal;
+    font-size: 60px;
+    text-align: center;
+
+}
+
+.flex-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.row{
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+    border-bottom: 3px solid black;
+    border-left: 1px solid black;
+
+}
+.resize{
+    width: 25%;
+}
+.box{
+
+    border-right: 1px solid black;
+    padding: 0 10px;
+
+}
+
+.quarter {
+    width: 25%;
+}
+
+.half{
+    width: 50%
+}
+.three-quarter{
+    width: 75%;
+}
+
+.sections{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+img{
+    width: 100%;
+}
+
+h3{
+    font-size: 30px;
+    text-align: center;
+    font-weight: normal;
+    font-style: italic;
+}
+
+.color-box{
+    display: flex;
+    align-items: center;
+    flex: 1;
+
+ }
+
+ .section-text{
+    text-decoration: none;
+    font-size: 30px;
+    padding-left: 30px;
+    font-weight: bold;
+    font-family: "Futura";
+    color: #666;
+ }

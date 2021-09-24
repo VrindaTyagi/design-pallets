@@ -1,0 +1,144 @@
+main {
+  background-color: hsl(233, 47%, 7%);
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+body {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.card {
+  display: flex;
+  width: 75%;
+  height: 70%;
+  background-color: hsl(244, 38%, 16%);
+  border-radius: 0.6em;
+}
+.right {
+  flex: 50%;
+  background-color: hsl(277, 90%, 25%);
+  border-top-right-radius: 0.6em;
+  border-bottom-right-radius: 0.6em;
+}
+img {
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  border-top-right-radius: 0.6em;
+  border-bottom-right-radius: 0.6em;
+}
+.left {
+  width: 50%;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  flex: 55%;
+}
+
+.heading {
+  font-family: "Inter", sans-serif;
+  color: hsl(0, 0%, 100%);
+  margin-block-start: 0;
+  padding: 0px 10px;
+}
+#purple {
+  color: hsl(277, 64%, 61%);
+}
+.info p {
+  font-size: 15px;
+  font-family: "Lexend Deca", sans-serif;
+  color: hsla(0, 0%, 100%, 0.75);
+  line-height: 1.4;
+  padding: 0px 70px 0px 10px;
+}
+
+.stats {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 0px 90px 0px 30px;
+}
+.info {
+  padding: 0px 76px 40px 85px ;
+}
+
+.stat-heading {
+  display: block;
+  margin-top: 5px;
+  color: hsla(0, 0%, 100%, 0.6);
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 11px;
+}
+.stat-number {
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  font-size: 22px;
+  color: hsl(0, 0%, 100%);
+}
+
+
+/* ---------------------------------------------------------------------------------------------------------------- */
+
+
+@media only screen and (max-width: 376px) {
+  .card {
+    flex-direction: column-reverse;
+    height: 50%;
+    width: 60%;
+  }
+  main {
+    min-height: 150vh;
+    padding-block-start: 80px;
+    padding-block-end: 80px;
+  }
+  .card{
+    height: 130%;
+    width: 85%;
+  }
+
+  .right {
+    border-top-left-radius: 0.6em;
+    border-bottom-right-radius: 0em;
+    height: 40%;
+
+  }
+  .left{
+      height: 65%;
+      width: 100%;
+      padding: 20px 0px;
+      text-align: center;
+  }
+
+  img{
+    border-top-left-radius: 0.6em;
+    border-bottom-right-radius: 0em;
+  }
+  .info p{
+      padding: 0px ;
+      margin-bottom: 40px;
+
+  }
+  .info{
+      padding: 0px 25px ;
+      margin: 0;
+  }
+
+  h1.heading{
+      font-size: 25px;
+      padding-block-start: 30px;
+
+  }
+  .stats{
+      flex-direction: column;
+      padding: 0px;
+  }
+  .stats div{
+      width: 100%;
+  }
+    span.stat-heading{
+        padding-block-end: 30px;
+    }
+}
