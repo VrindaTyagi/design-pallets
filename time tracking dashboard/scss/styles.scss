@@ -1,0 +1,144 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    color: whitesmoke;
+    margin: 0;
+}
+main{
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(226, 43%, 10%);
+
+}
+
+.card{
+    display: flex;
+    width: 80%;
+    background-color: hsl(226, 43%, 10%);
+    font-family: 'Rubik', sans-serif;
+
+
+    .left{
+        display: flex;
+        flex-direction: column;
+        width: 20%;
+
+        .top-card{
+            background-color: hsl(246, 80%, 60%);
+            padding-inline-start: 30px;
+            padding-block-start: 20px;
+            height: 70%;
+            border-radius: 13px;
+
+            img{
+                width: 40%;
+            }
+
+            p:nth-child(2){
+                color: hsl(236, 100%, 87%);
+                font-size: 1vw;
+                margin-block-end: 5px;
+                font-weight: 600;
+
+            }
+            p:nth-child(3){
+                font-size: 2.5vw;
+                color: white;
+                font-weight: 400;
+                margin-block-start:0;
+            }
+        }
+        .below-card{
+            font-size: 1.2vw;
+            color: hsl(235, 45%, 61%);
+            background-color: hsl(235, 46%, 20%);
+            .daily{
+                padding-inline-start: 30px;
+                margin-block-start: -20px;
+            }
+            height: 100%;
+            border-radius: 13px;
+        }
+
+    }
+
+    .right{
+    display: grid;
+	grid-template-columns: 30% 30% 30%;
+	grid-column-gap: 30px;
+	grid-row-gap: 20px;
+	padding: 0px 30px;
+	width: 80%;
+    padding-block-end: 5px;
+
+    @mixin theme($color: hsl(15, 100%, 70%)) {
+        background-color: $color;
+        background-image: url(../images/icon-work.svg);
+        background-position: right -10px;
+        background-repeat: no-repeat;
+        border-radius: 13px;
+    }
+    .work{
+        @include theme($color: hsl(15, 100%, 70%));
+        background-image: url(../images/icon-work.svg);
+
+    }
+    .play{
+        @include theme($color: hsl(195, 74%, 62%));
+        background-image: url(../images/icon-play.svg);
+    }
+    .study{
+        @include theme($color: hsl(348, 100%, 68%));
+        background-image: url(../images/icon-study.svg);
+    }
+    .exercise{
+        @include theme($color: hsl(145, 58%, 55%));
+        background-image: url(../images/icon-exercise.svg);
+    }
+    .social{
+        @include theme($color: hsl(264, 64%, 52%));
+        background-image: url(../images/icon-social.svg);
+    }
+    .self-care{
+        @include theme($color: hsl(43, 84%, 65%));
+        background-image: url(../images/icon-self-care.svg);
+    }
+
+    .info{
+        background-color: hsl(235, 46%, 20%);;
+        height: 77%;
+        display: flex;
+        flex-direction: column;
+        padding: 0px 20px;
+        margin: 50px 0px 0px 0px ;
+        border-radius: 13px;
+
+        div:nth-child(1){
+            margin: 0px 20px;
+            display: flex;
+            justify-content: space-between;
+            font-weight: 700;
+        }
+        div:nth-child(2){
+            margin: 0px 20px;
+
+            .hrs{
+                font-size: 3.3vw;
+                margin: 0;
+            }
+            .last-week{
+                font-size:  1vw;
+                color: hsl(236, 100%, 87%);
+                font-weight: 500;
+            }
+
+        }
+    }
+
+    }
+
+}

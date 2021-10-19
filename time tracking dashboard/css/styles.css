@@ -1,0 +1,197 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  color: whitesmoke;
+  margin: 0;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #0f1424;
+}
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80%;
+  background-color: #0f1424;
+  font-family: 'Rubik', sans-serif;
+}
+
+.card .left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 20%;
+}
+
+.card .left .top-card {
+  background-color: #5847eb;
+  -webkit-padding-start: 30px;
+          padding-inline-start: 30px;
+  -webkit-padding-before: 20px;
+          padding-block-start: 20px;
+  height: 70%;
+  border-radius: 13px;
+}
+
+.card .left .top-card img {
+  width: 40%;
+}
+
+.card .left .top-card p:nth-child(2) {
+  color: #bdc1ff;
+  font-size: 1vw;
+  -webkit-margin-after: 5px;
+          margin-block-end: 5px;
+  font-weight: 600;
+}
+
+.card .left .top-card p:nth-child(3) {
+  font-size: 2.5vw;
+  color: white;
+  font-weight: 400;
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+}
+
+.card .left .below-card {
+  font-size: 1.2vw;
+  color: #6f76c8;
+  background-color: #1c1f4a;
+  height: 100%;
+  border-radius: 13px;
+}
+
+.card .left .below-card .daily {
+  -webkit-padding-start: 30px;
+          padding-inline-start: 30px;
+  -webkit-margin-before: -20px;
+          margin-block-start: -20px;
+}
+
+.card .right {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 30% 30% 30%;
+      grid-template-columns: 30% 30% 30%;
+  grid-column-gap: 30px;
+  grid-row-gap: 20px;
+  padding: 0px 30px;
+  width: 80%;
+  -webkit-padding-after: 5px;
+          padding-block-end: 5px;
+}
+
+.card .right .work {
+  background-color: #ff8c66;
+  background-image: url(../images/icon-work.svg);
+  background-position: right -10px;
+  background-repeat: no-repeat;
+  border-radius: 13px;
+  background-image: url(../images/icon-work.svg);
+}
+
+.card .right .play {
+  background-color: #56c2e6;
+  background-image: url(../images/icon-work.svg);
+  background-position: right -10px;
+  background-repeat: no-repeat;
+  border-radius: 13px;
+  background-image: url(../images/icon-play.svg);
+}
+
+.card .right .study {
+  background-color: #ff5c7c;
+  background-image: url(../images/icon-work.svg);
+  background-position: right -10px;
+  background-repeat: no-repeat;
+  border-radius: 13px;
+  background-image: url(../images/icon-study.svg);
+}
+
+.card .right .exercise {
+  background-color: #4acf81;
+  background-image: url(../images/icon-work.svg);
+  background-position: right -10px;
+  background-repeat: no-repeat;
+  border-radius: 13px;
+  background-image: url(../images/icon-exercise.svg);
+}
+
+.card .right .social {
+  background-color: #7536d3;
+  background-image: url(../images/icon-work.svg);
+  background-position: right -10px;
+  background-repeat: no-repeat;
+  border-radius: 13px;
+  background-image: url(../images/icon-social.svg);
+}
+
+.card .right .self-care {
+  background-color: #f1c65b;
+  background-image: url(../images/icon-work.svg);
+  background-position: right -10px;
+  background-repeat: no-repeat;
+  border-radius: 13px;
+  background-image: url(../images/icon-self-care.svg);
+}
+
+.card .right .info {
+  background-color: #1c1f4a;
+  height: 77%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0px 20px;
+  margin: 50px 0px 0px 0px;
+  border-radius: 13px;
+}
+
+.card .right .info div:nth-child(1) {
+  margin: 0px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-weight: 700;
+}
+
+.card .right .info div:nth-child(2) {
+  margin: 0px 20px;
+}
+
+.card .right .info div:nth-child(2) .hrs {
+  font-size: 3.3vw;
+  margin: 0;
+}
+
+.card .right .info div:nth-child(2) .last-week {
+  font-size: 1vw;
+  color: #bdc1ff;
+  font-weight: 500;
+}
+/*# sourceMappingURL=styles.css.map */
