@@ -80,11 +80,43 @@ main {
   border-radius: 13px;
 }
 
-.card .left .below-card .daily {
+.card .left .below-card .options {
   -webkit-padding-start: 30px;
           padding-inline-start: 30px;
   -webkit-margin-before: -20px;
           margin-block-start: -20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.card .left .below-card .options button {
+  font-size: 16px;
+  margin: 8px 0px;
+  font-weight: 400;
+}
+
+.card .left .below-card .options button.inactive:hover {
+  color: white;
+}
+
+.card .left .below-card .options button.active {
+  color: white;
+  background-color: transparent;
+  border: none;
+}
+
+.card .left .below-card .options button.inactive {
+  color: #bdc1ff;
+  background-color: transparent;
+  border: none;
 }
 
 .card .right {
@@ -184,12 +216,12 @@ main {
   margin: 0px 20px;
 }
 
-.card .right .info div:nth-child(2) .hrs {
+.card .right .info div:nth-child(2) .current {
   font-size: 3.3vw;
   margin: 0;
 }
 
-.card .right .info div:nth-child(2) .last-week {
+.card .right .info div:nth-child(2) .previous {
   font-size: 1vw;
   color: #bdc1ff;
   font-weight: 500;
